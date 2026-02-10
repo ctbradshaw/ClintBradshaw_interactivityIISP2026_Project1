@@ -1,9 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Breath + Notes (Project 1)</title>
+
+  <!-- CSS later (leave it linked so we can style next) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font (we'll really use it more when CSS starts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
-<body>
-    Hello World
+
+<body style="font-family: 'Oswald', sans-serif; margin: 0;">
+
+  <!-- HEADER -->
+  <header style="padding: 18px 20px;">
+    <h1 style="color: teal; font-size: 48px; margin: 0;">
+      Lung Map + Music Notes
+    </h1>
+
+    <p style="margin-top: 8px; max-width: 850px;">
+      This page is about breath support (appoggio) and how it connects to singing.
+      The lung is the main “map.” The music notes are little moments and thoughts.
+    </p>
+
+    <p style="margin-top: 6px;">
+      <strong>How to use it:</strong> hover a note = quick hint. click a note = more text opens.
+    </p>
+  </header>
+
+  <!-- NAV -->
+  <nav style="padding: 10px 20px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+    <a href="#lung-area">Lung</a> |
+    <a href="#timeline">Timeline</a> |
+    <a href="#mini-words">Mini Words</a>
+  </nav>
+
+  <main style="padding: 18px 20px;">
+
+    <!-- LUNG AREA -->
+    <section id="lung-area" style="margin-bottom: 35px;">
+      <h2 style="font-size: 32px; margin-bottom: 8px;">The Lung (main idea)</h2>
+
+      <p style="max-width: 900px;">
+        The lung is like the center of the story. Later, with CSS, the notes will sit around it
+        like little “memory dots.” For now, the notes are below so everything still works.
+      </p>
+
+      <!-- IMAGE -->
+      <figure style="margin: 14px 0;">
+        <!-- TODO: put your lung drawing image in /images -->
+        <img
+          src="images/lung-drawing.png"
+          alt="A drawing of a lung used as a map for the page"
+          style="max-width: 520px; width: 100%; height: auto; border: 1px solid #999;"
+        />
+        <figcaption style="color: #555; margin-top: 6px;">
+          If your file name is different, change the src. (example: images/myLung.png)
+        </figcaption>
+      </figure>
+
+      <!-- MAIN TEXT (this will go "inside" the lung later with CSS) -->
+      <section style="margin-top: 18px; max-width: 900px;">
+        <h3 style="margin-bottom: 6px; color: #8b0000;">Main message (goes inside the lung later)</h3>
+
+        <p style="margin-top: 0;">
+          I used to think singing was just “breathe from the belly” and go.
+          But appoggio is more like control. You inhale low, ribs open, then you don’t let it
+          collapse fast. You kind of “lean” on the breath so the sound stays steady.
+        </p>
+
+        <p>
+          The weird part is… when you start doing it right, your body feels different.
+          Like stiff, or sore, or you feel muscles you didn’t know you had.
+          It’s annoying, but also it feels real.
+        </p>
+      </section>
+
+      <!-- NOTES -->
+      <section style="margin-top: 18px;">
+        <h3 style="margin-bottom: 8px;">Music Notes (click these)</h3>
+        <p style="margin-top: 0;">
+          Later these will float around the lung. Right now they are just stacked.
+        </p>
+
+        <!-- NOTE 1 -->
+        <details style="margin-bottom: 10px;">
+          <summary title="I thought I had it, but nah">
+            ♪ Note 1: The fake confidence phase
+          </summary>
+          <p>
+            I was singing songs and thinking “okay I got support now.”
+            But it wasn’t official support. I still had tension and didn’t notice it.
+            Then I hit a plateau and got mad.
+          </p>
+        </details>
+
+        <!-- NOTE 2 -->
+        <details style="margin-bottom: 10px;">
+          <summary title="lots of trial and error">
+            ♫ Note 2: Finding the muscles (finally)
+          </summary>
+          <p>
+            I did breathing drills and kept trying stuff until something clicked.
+            When it clicked, I got sore. Like реально sore.
+            But I also felt excited because I knew I wasn’t guessing anymore.
+          </p>
+        </details>
+
+        <!-- NOTE 3 -->
+        <details style="margin-bottom: 10px;">
+          <summary title="happy and mad at the same time">
+            ♩ Note 3: The “I got it” moment
+          </summary>
+          <p>
+            It was a mix of anger and happiness.
+            Anger because it took so long. Happiness because I finally felt the support
+            in a real way, not just “in my head.”
+          </p>
+        </details>
+
+        <!-- NOTE 4 -->
+        <details style="margin-bottom: 10px;">
+          <summary title="support shows up, but it fights your old habits">
+            ♬ Note 4: The stiff body part
+          </summary>
+          <p>
+            Once the support muscles showed up, my body felt stiff and kinda weird.
+            I had to learn how to keep the ribs open without locking up.
+            It takes time to make it feel natural.
+          </p>
+        </details>
+
+        <!-- NOTE 5 -->
+        <details style="margin-bottom: 10px;">
+          <summary title="internet research was actually helpful">
+            ♪ Note 5: The research spiral
+          </summary>
+          <p>
+            I watched videos and read about appoggio and bel canto.
+            It made me realize it’s not “push air.” It’s more like “hold back air”
+            so only what you need comes out.
+          </p>
+        </details>
+
+      </section>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" style="margin-bottom: 35px;">
+      <h2 style="font-size: 32px; margin-bottom: 8px;">Timeline</h2>
+
+      <article style="margin-bottom: 16px;">
+        <h3 style="margin: 0;">Nov – Dec 2025</h3>
+        <ul style="margin-top: 6px;">
+          <li>Still singing songs, but support wasn’t real yet</li>
+          <li>Plateau hit, started researching more</li>
+          <li>More drills, more “why is this not working”</li>
+        </ul>
+      </article>
+
+      <article style="margin-bottom: 16px;">
+        <h3 style="margin: 0;">Late Dec 2025</h3>
+        <ul style="margin-top: 6px;">
+          <li>Started doing more controlled breathing drills</li>
+          <li>Noticed the “hold back the air” idea</li>
+          <li>Felt like progress, but still not automatic</li>
+        </ul>
+      </article>
+
+      <article style="margin-bottom: 16px;">
+        <h3 style="margin: 0;">Jan – Feb 2026</h3>
+        <ul style="margin-top: 6px;">
+          <li>Some days felt good, some days felt fake again</li>
+          <li>Support showed up more but I still had to think about it</li>
+          <li>Got emotional because singing is personal for me</li>
+        </ul>
+      </article>
+
+      <p style="color: #555;">
+        Later idea: clicking a timeline part could highlight certain notes.
+        (We can do that with JS later, easy.)
+      </p>
+    </section>
+
+    <!-- MINI WORDS -->
+    <section id="mini-words" style="margin-bottom: 35px;">
+      <h2 style="font-size: 32px; margin-bottom: 8px;">Mini Words (simple version)</h2>
+
+      <ul style="max-width: 900px;">
+        <li><strong>Appoggio:</strong> “Lean” on the breath. Ribs stay open. Don’t dump air fast.</li>
+        <li><strong>Bel canto:</strong> “Beautiful singing.” Smooth sound, not tight, not forced.</li>
+        <li><strong>Support:</strong> Not a crunch. More like controlled air + steady body.</li>
+        <li><strong>Why the lung:</strong> It’s a body map. Breath is literally the engine.</li>
+      </ul>
+    </section>
+
+    <!-- CLOSING -->
+    <section style="margin-bottom: 25px; max-width: 900px;">
+      <h2 style="font-size: 32px; margin-bottom: 8px;">Ending Note</h2>
+      <p>
+        This is basically my body learning breath control and my brain learning patience.
+        I’m not trying to act like a teacher or anything. I’m just tracking what I felt.
+      </p>
+    </section>
+
+  </main>
+
+  <footer style="padding: 14px 20px; border-top: 1px solid #ccc; color: #444;">
+    <p style="margin: 0;">
+      Project 1 • Interactivity II • last updated: whenever I remember
+    </p>
+  </footer>
+
 </body>
 </html>
