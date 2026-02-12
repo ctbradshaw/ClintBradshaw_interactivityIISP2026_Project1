@@ -3,219 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyName_InteractivityIISp26_Project1</title>
 
-  <title>Breath + Notes (Project 1)</title>
-
-  <!-- CSS later (leave it linked so we can style next) -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Font (we'll really use it more when CSS starts) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 
-<body style="font-family: 'Oswald', sans-serif; margin: 0;">
+<body>
 
-  <!-- HEADER -->
-  <header style="padding: 18px 20px;">
-    <h1 style="color: teal; font-size: 48px; margin: 0;">
-      Lung Map + Music Notes
-    </h1>
+  <div class="stars" aria-hidden="true"></div>
 
-    <p style="margin-top: 8px; max-width: 850px;">
-      This page is about breath support (appoggio) and how it connects to singing.
-      The lung is the main “map.” The music notes are little moments and thoughts.
-    </p>
+  <p class="hint">Hover to reveal my story</p>
 
-    <p style="margin-top: 6px;">
-      <strong>How to use it:</strong> hover a note = quick hint. click a note = more text opens.
-    </p>
-  </header>
+  <div class="scene">
+    <div class="trachea" aria-hidden="true"></div>
 
-  <!-- NAV -->
-  <nav style="padding: 10px 20px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
-    <a href="#lung-area">Lung</a> |
-    <a href="#timeline">Timeline</a> |
-    <a href="#mini-words">Mini Words</a>
-  </nav>
+    <!-- LEFT LUNG -->
+    <svg class="lung left" viewBox="0 0 360 540" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="clipLeft">
+          <path d="M 184 42 C 224 48, 262 78, 282 124 C 300 168, 302 219, 296 268 C 289 311, 276 352, 258 389 C 242 422, 216 458, 184 471 C 150 484, 118 468, 92 438 C 72 414, 58 380, 48 340 C 40 304, 36 264, 38 224 C 40 176, 52 132, 74 99 C 102 58, 142 38, 184 42 Z" />
+        </clipPath>
+      </defs>
 
-  <main style="padding: 18px 20px;">
+      <path class="lung-shape" d="M 184 42 C 224 48, 262 78, 282 124 C 300 168, 302 219, 296 268 C 289 311, 276 352, 258 389 C 242 422, 216 458, 184 471 C 150 484, 118 468, 92 438 C 72 414, 58 380, 48 340 C 40 304, 36 264, 38 224 C 40 176, 52 132, 74 99 C 102 58, 142 38, 184 42 Z" />
 
-    <!-- LUNG AREA -->
-    <section id="lung-area" style="margin-bottom: 35px;">
-      <h2 style="font-size: 32px; margin-bottom: 8px;">The Lung (main idea)</h2>
+      <foreignObject x="0" y="0" width="360" height="540" clip-path="url(#clipLeft)">
+        <div class="story">
+          <p>I thought I had support before. I did not.</p>
+          <p>I was singing everyday with tension and guessing.</p>
+          <p>Then I plateaued and got frustrated for real.</p>
+          <p>I started straw drills and Farinelli breathing daily.</p>
+          <p>I moved from chest breathing to lower breathing, still leaking air.</p>
+          <p>One day I found rib support and everything felt different.</p>
+          <p>I got sore and stiff after. Scary at first, but normal.</p>
+          <p>Appoggio is not push harder. It is control and hold back air.</p>
+          <p>Like a balloon letting out air slowly, not exploding out.</p>
+          <p>That is when my notes felt less forced and more stable.</p>
+          <p>I had anger and extreme happiness at the same time.</p>
+          <p>Finally felt like I actually reached the point I wanted.</p>
+        </div>
+      </foreignObject>
+    </svg>
 
-      <p style="max-width: 900px;">
-        The lung is like the center of the story. Later, with CSS, the notes will sit around it
-        like little “memory dots.” For now, the notes are below so everything still works.
-      </p>
+    <!-- RIGHT LUNG -->
+    <svg class="lung right" viewBox="0 0 360 540" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="clipRight">
+          <path d="M 176 42 C 218 38, 258 58, 286 99 C 308 132, 320 176, 322 224 C 324 264, 320 304, 312 340 C 302 380, 288 414, 268 438 C 242 468, 210 484, 176 471 C 144 458, 118 422, 102 389 C 84 352, 71 311, 64 268 C 58 219, 60 168, 78 124 C 98 78, 136 48, 176 42 Z" />
+        </clipPath>
+      </defs>
 
-      <!-- IMAGE -->
-      <figure style="margin: 14px 0;">
-        <!-- TODO: put your lung drawing image in /images -->
-        <img
-          src="images/lung-drawing.png"
-          alt="A drawing of a lung used as a map for the page"
-          style="max-width: 520px; width: 100%; height: auto; border: 1px solid #999;"
-        />
-        <figcaption style="color: #555; margin-top: 6px;">
-          If your file name is different, change the src. (example: images/myLung.png)
-        </figcaption>
-      </figure>
+      <path class="lung-shape" d="M 176 42 C 218 38, 258 58, 286 99 C 308 132, 320 176, 322 224 C 324 264, 320 304, 312 340 C 302 380, 288 414, 268 438 C 242 468, 210 484, 176 471 C 144 458, 118 422, 102 389 C 84 352, 71 311, 64 268 C 58 219, 60 168, 78 124 C 98 78, 136 48, 176 42 Z" />
 
-      <!-- MAIN TEXT (this will go "inside" the lung later with CSS) -->
-      <section style="margin-top: 18px; max-width: 900px;">
-        <h3 style="margin-bottom: 6px; color: #8b0000;">Main message (goes inside the lung later)</h3>
+      <foreignObject x="0" y="0" width="360" height="540" clip-path="url(#clipRight)">
+        <div  class="story">
+          <p>Then I had to stop full songs. That hurt me emotionally.</p>
+          <p>Early to late Dec was drills only. Mostly straw and stability checks.</p>
+          <p>I used code to check if breath was steady enough.</p>
+          <p>January was boring stage. I knew steps, body still not automatic.</p>
+          <p>Mid to late January I cracked one night after training.</p>
+          <p>It felt like losing part of my identity for a bit.</p>
+          <p>I went numb for about a week, then got neutral and kept going.</p>
+          <p>Late Jan to early Feb support started showing up easier.</p>
+          <p>Oo and oh are stable now. Ahh still needs work.</p>
+          <p>I can lip trill melodies now because support is more automated.</p>
+          <p>I still do not rush songs. I wanna protect this progress.</p>
+          <p>Less dopamine sessions, more consistency. That was the breakthrough.</p>
+        </div>
+      </foreignObject>
+    </svg>
+  </div>
 
-        <p style="margin-top: 0;">
-          I used to think singing was just “breathe from the belly” and go.
-          But appoggio is more like control. You inhale low, ribs open, then you don’t let it
-          collapse fast. You kind of “lean” on the breath so the sound stays steady.
-        </p>
+  <!-- NOTES -->
 
-        <p>
-          The weird part is… when you start doing it right, your body feels different.
-          Like stiff, or sore, or you feel muscles you didn’t know you had.
-          It’s annoying, but also it feels real.
-        </p>
-      </section>
+  <div class="note n1">
+    ♪
+    <div class="tip">
+      <div class="when">November – December 2025</div>
+      Sang songs with no real support. Still thought I had appoggio. I didn't.
+    </div>
+  </div>
 
-      <!-- NOTES -->
-      <section style="margin-top: 18px;">
-        <h3 style="margin-bottom: 8px;">Music Notes (click these)</h3>
-        <p style="margin-top: 0;">
-          Later these will float around the lung. Right now they are just stacked.
-        </p>
+  <div class="note n2">
+    ♫
+    <div class="tip">
+      <div class="when">November – December 2025</div>
+      Started plateauing. More research + straw exercises + Farinelli breathing.
+    </div>
+  </div>
 
-        <!-- NOTE 1 -->
-        <details style="margin-bottom: 10px;">
-          <summary title="I thought I had it, but nah">
-            ♪ Note 1: The fake confidence phase
-          </summary>
-          <p>
-            I was singing songs and thinking “okay I got support now.”
-            But it wasn’t official support. I still had tension and didn’t notice it.
-            Then I hit a plateau and got mad.
-          </p>
-        </details>
+  <div class="note n3">
+    ♩
+    <div class="tip">
+      <div class="when">November – December 2025</div>
+      Finally found the muscles. Was sore and in pain after. Normal process.
+    </div>
+  </div>
 
-        <!-- NOTE 2 -->
-        <details style="margin-bottom: 10px;">
-          <summary title="lots of trial and error">
-            ♫ Note 2: Finding the muscles (finally)
-          </summary>
-          <p>
-            I did breathing drills and kept trying stuff until something clicked.
-            When it clicked, I got sore. Like реально sore.
-            But I also felt excited because I knew I wasn’t guessing anymore.
-          </p>
-        </details>
+  <div class="note n4">
+    ♬
+    <div class="tip">
+      <div class="when">November – December 2025</div>
+      Muscles found, body stiff and rigid. Took time to train tension out.
+    </div>
+  </div>
 
-        <!-- NOTE 3 -->
-        <details style="margin-bottom: 10px;">
-          <summary title="happy and mad at the same time">
-            ♩ Note 3: The “I got it” moment
-          </summary>
-          <p>
-            It was a mix of anger and happiness.
-            Anger because it took so long. Happiness because I finally felt the support
-            in a real way, not just “in my head.”
-          </p>
-        </details>
+  <div class="note n5">
+    ♪
+    <div class="tip">
+      <div class="when">November – December 2025</div>
+      Couldn’t sing songs till coordination automated. Huge emotional impact.
+    </div>
+  </div>
 
-        <!-- NOTE 4 -->
-        <details style="margin-bottom: 10px;">
-          <summary title="support shows up, but it fights your old habits">
-            ♬ Note 4: The stiff body part
-          </summary>
-          <p>
-            Once the support muscles showed up, my body felt stiff and kinda weird.
-            I had to learn how to keep the ribs open without locking up.
-            It takes time to make it feel natural.
-          </p>
-        </details>
+  <div class="note n6">
+    ♫
+    <div class="tip">
+      <div class="when">Early – Late December 2025</div>
+      Stopped full songs. Only straw. Singing full out can kill progress here.
+    </div>
+  </div>
 
-        <!-- NOTE 5 -->
-        <details style="margin-bottom: 10px;">
-          <summary title="internet research was actually helpful">
-            ♪ Note 5: The research spiral
-          </summary>
-          <p>
-            I watched videos and read about appoggio and bel canto.
-            It made me realize it’s not “push air.” It’s more like “hold back air”
-            so only what you need comes out.
-          </p>
-        </details>
+  <div class="note n7">
+    ♩
+    <div class="tip">
+      <div class="when">Early – Late December 2025</div>
+      Used code for breath stability and tweaked routine almost daily.
+    </div>
+  </div>
 
-      </section>
-    </section>
+  <div class="note n8">
+    ♬
+    <div class="tip">
+      <div class="when">January 2026</div>
+      Knew what to do. Could not do it automatic yet. Most boring stage.
+    </div>
+  </div>
 
-    <!-- TIMELINE -->
-    <section id="timeline" style="margin-bottom: 35px;">
-      <h2 style="font-size: 32px; margin-bottom: 8px;">Timeline</h2>
+  <div class="note n9">
+    ♪
+    <div class="tip">
+      <div class="when">Mid – Late January 2026</div>
+      One night after training I cracked. Brain had enough emotionally.
+    </div>
+  </div>
 
-      <article style="margin-bottom: 16px;">
-        <h3 style="margin: 0;">Nov – Dec 2025</h3>
-        <ul style="margin-top: 6px;">
-          <li>Still singing songs, but support wasn’t real yet</li>
-          <li>Plateau hit, started researching more</li>
-          <li>More drills, more “why is this not working”</li>
-        </ul>
-      </article>
+  <div class="note n10">
+    ♫
+    <div class="tip">
+      <div class="when">Late Jan – Early Feb 2026</div>
+      Support started coming effortless. Needed neutrality first.
+    </div>
+  </div>
 
-      <article style="margin-bottom: 16px;">
-        <h3 style="margin: 0;">Late Dec 2025</h3>
-        <ul style="margin-top: 6px;">
-          <li>Started doing more controlled breathing drills</li>
-          <li>Noticed the “hold back the air” idea</li>
-          <li>Felt like progress, but still not automatic</li>
-        </ul>
-      </article>
+  <div class="note n11">
+    ♯
+    <div class="tip">
+      <div class="when">Late Jan – Early Feb 2026</div>
+      Sessions became easier and less dopamine-filled. Good sign.
+    </div>
+  </div>
 
-      <article style="margin-bottom: 16px;">
-        <h3 style="margin: 0;">Jan – Feb 2026</h3>
-        <ul style="margin-top: 6px;">
-          <li>Some days felt good, some days felt fake again</li>
-          <li>Support showed up more but I still had to think about it</li>
-          <li>Got emotional because singing is personal for me</li>
-        </ul>
-      </article>
+  <div class="note n12">
+    𝄞
+    <div class="tip">
+      <div class="when">February – Now</div>
+      Oo mastered. Oh stable. Ahh current vowel. Still no full songs yet.
+    </div>
+  </div>
 
-      <p style="color: #555;">
-        Later idea: clicking a timeline part could highlight certain notes.
-        (We can do that with JS later, easy.)
-      </p>
-    </section>
+  <div class="note n13">
+    ♭
+    <div class="tip">
+      <div class="when">February – Now</div>
+      Lip trill melodies now because support is more automated.
+    </div>
+  </div>
 
-    <!-- MINI WORDS -->
-    <section id="mini-words" style="margin-bottom: 35px;">
-      <h2 style="font-size: 32px; margin-bottom: 8px;">Mini Words (simple version)</h2>
-
-      <ul style="max-width: 900px;">
-        <li><strong>Appoggio:</strong> “Lean” on the breath. Ribs stay open. Don’t dump air fast.</li>
-        <li><strong>Bel canto:</strong> “Beautiful singing.” Smooth sound, not tight, not forced.</li>
-        <li><strong>Support:</strong> Not a crunch. More like controlled air + steady body.</li>
-        <li><strong>Why the lung:</strong> It’s a body map. Breath is literally the engine.</li>
-      </ul>
-    </section>
-
-    <!-- CLOSING -->
-    <section style="margin-bottom: 25px; max-width: 900px;">
-      <h2 style="font-size: 32px; margin-bottom: 8px;">Ending Note</h2>
-      <p>
-        This is basically my body learning breath control and my brain learning patience.
-        I’m not trying to act like a teacher or anything. I’m just tracking what I felt.
-      </p>
-    </section>
-
-  </main>
-
-  <footer style="padding: 14px 20px; border-top: 1px solid #ccc; color: #444;">
-    <p style="margin: 0;">
-      Project 1 • Interactivity II • last updated: whenever I remember
-    </p>
-  </footer>
+  <div class="note n14">
+    ♪
+    <div class="tip">
+      <div class="when">February – Now</div>
+      Speaking voice dropped over months. Appoggio carried into speech.
+    </div>
+  </div>
 
 </body>
 </html>
