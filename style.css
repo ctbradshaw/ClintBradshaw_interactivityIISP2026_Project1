@@ -91,9 +91,7 @@ body {
 
 /* notes */
 .note {
-  position: fixed;
-  left: var(--x);
-  top: var(--y);
+  position: absolute;
   font-size: var(--s);
   cursor: pointer;
   z-index: 20;
